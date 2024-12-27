@@ -61,6 +61,7 @@ router.post("/signin", async (req, res) => {
 // Add a new client
 router.post("/add-client", async (req, res) => {
   const { cid, lid, cname, cphone, caddress } = req.body;
+  console.log(req.body)
   try {
     // Check if client ID already exists
     const [existingClient] = await pool.query(

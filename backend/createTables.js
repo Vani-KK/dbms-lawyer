@@ -16,7 +16,7 @@ const createTables = async () => {
             cid VARCHAR(10),
             lid VARCHAR(10),
             cname VARCHAR(15),
-            cphone INT,
+            cphone BIGINT,
             caddress VARCHAR(20),
             PRIMARY KEY (cid),
             FOREIGN KEY (lid) REFERENCES lawyer (lid) ON DELETE CASCADE
